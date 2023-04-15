@@ -1,5 +1,3 @@
-# Gulp-Starter (template)
+# Grandles
 
-Gulp-сборка для вёрстки.
-
-Задачи для HTML, SCSS, JavaScript, Img, Fonts.
+Многостраничный сайт из Figma.

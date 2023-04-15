@@ -1,18 +1,25 @@
 // COLORS
 
 :root {
-	--color-primary: white;
-	--color-secondary: black;
+	--color-bg: #fff;
+	--color-box: #faf7f1;
+	--color-border: #e0e0e0;
+	--color-text: #222;
+	--color-title: #2a1a01;
+	--color-subtext: #777;
+	--color-accent: #ff9b04;
 }
 
 // SPACES
 
 :root {
 	--space-base: 100px;
-	--space-sm: calc(var(--space-base) * 0.2);
-	--space-md: calc(var(--space-base) * 0.4);
-	--space-lg: calc(var(--space-base) * 0.6);
-	--space-xl: calc(var(--space-base) * 1);
+	--space-xxs: calc(var(--space-base) * 0.1);
+	--space-xs: calc(var(--space-base) * 0.2);
+	--space-sm: calc(var(--space-base) * 0.3);
+	--space-md: calc(var(--space-base) * 0.5);
+	--space-lg: calc(var(--space-base) * 0.8);
+	--space-xl: calc(var(--space-base) * 1.2);
 }
 
 // FONTS
@@ -20,10 +27,14 @@
 $fonts-root: "../fonts/";
 
 :root {
-	--font-size-sm: .75rem;
+	--font-size-xxs: 0.75rem;
+	--font-size-xs: 0.8125rem;
+	--font-size-sm: 0.875rem;
+	--font-size-base: 1rem;
 	--font-size-md: 1.25rem;
-	--font-size-lg: 1.5rem;
-	--font-size-xl: 1.75rem;
+	--font-size-lg: 2.125rem;
+	--font-size-xl: 2.75rem;
+	--font-size-xxl: 3.75rem;
 }
 
 // MEDIA

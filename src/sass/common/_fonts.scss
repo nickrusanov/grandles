@@ -8,4 +8,9 @@
 	}
 }
 
-// @include font-face("Montserrat", "#{$fonts-root}Montserrat-Bold", normal, 700);
+@include font-face("Gilroy", "#{$fonts-root}Gilroy-Regular", normal, 400);
+@include font-face("Gilroy", "#{$fonts-root}Gilroy-Medium", normal, 500);
+@include font-face("Gilroy", "#{$fonts-root}Gilroy-SemiBold", normal, 600);
+@include font-face("Gilroy", "#{$fonts-root}Gilroy-Bold", normal, 700);
+@include font-face("Gilroy", "#{$fonts-root}Gilroy-ExtraBold", normal, 800);
+@include font-face("Gilroy", "#{$fonts-root}Gilroy-Heavy", normal, 900);

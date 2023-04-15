@@ -1,3 +1,324 @@
 <header class="header">
-	
+	<div class="header__top">
+		<div class="container">
+			<div class="header__top-inner">
+				<div class="header__location location">
+					<div class="location__select">
+						<span>Ваш город:</span>
+						<button class="location__btn" type="button">Москва</button>
+					</div>
+
+					<div class="location__box">
+						<form class="location__form" action="#">
+							<input class="location__input" type="search" placeholder="Найти город">
+
+							<button class="location__reset" type="reset">
+								<svg class="location__reset-svg" width="13" height="13" viewBox="0 0 13 13" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.0142851 0.707107L11.328 12.0208L12.0351 11.3137L0.721392 0L0.0142851 0.707107Z" />
+									<path d="M11.3137 1.78814e-07L0 11.3137L0.707107 12.0208L12.0208 0.707107L11.3137 1.78814e-07Z" />
+								</svg>
+							</button>
+						</form>
+
+						<ul class="location__city-list">
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Москва
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Балашиха
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Дмитров
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Долгопрудный
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Домодедово
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Звенигород
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Зеленоград
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Истра
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Клин
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Коломна
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Королёв
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Люберцы
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Одинцово
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Раменское
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Сергиев Посад
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Химки
+								</a>
+							</li>
+
+							<li class="location__city-item">
+								<a class="location__city-link" href="#">
+									Электросталь
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="header__address">
+					<a class="header__address-link" href="#">
+						Москва, г. Химки, ул. Рабочая, дом 2
+					</a>
+
+					<p class="header__address-time">
+						с 09:00 до 20:00 без выходных
+					</p>
+				</div>
+
+				<div class="header__contacts">
+					<div class="header__phones">
+						<a class="header__phones-link" href="tel:+74959704562">+7 (495) 970-45-62</a>
+						<a class="header__phones-link" href="tel:+79152027257">+7 (915) 202-72-57</a>
+					</div>
+
+					<a class="header__contacts-call" href="#">Перезвонить?</a>
+				</div>
+
+				<div class="header__social social">
+					<p class="social__text">Связаться:</p>
+
+					<ul class="social__list">
+						<li class="social__item">
+							<a class="social__item-link" href="#" title="Telegram">
+								<img class="social__item-icon" src="./img/icon/telegram.svg" alt="telegram">
+							</a>
+						</li>
+
+						<li class="social__item">
+							<a class="social__item-link" href="#" title="WhatsApp">
+								<img class="social__item-icon" src="./img/icon/whatsapp.svg" alt="whatsapp">
+							</a>
+						</li>
+
+						<li class="social__item">
+							<a class="social__item-link" href="#" title="Viber">
+								<img class="social__item-icon" src="./img/icon/viber.svg" alt="viber">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="header__nav nav">
+		<div class="container">
+			<div class="nav__inner">
+				<a class="header__link" href="mailto:grandlesmarket@mail.ru">grandlesmarket@mail.ru</a>
+
+				<div class="nav__box">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__item-link nav__item-link--submenu" href="#">
+								Каталог
+							</a>
+
+							<div class="nav__subbox">
+								<ul class="nav__subbox-list nav__subbox-list--double">
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Доска</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Половая доска</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Брус</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Фанера</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Брусок</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Лиственница</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Блокхаус</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Пиломатериал</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Вагонка</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Погонаж</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Имитация бруса</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Стройматериалы</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__item-link nav__item-link--submenu" href="#">
+								Покупателю
+							</a>
+
+							<div class="nav__subbox">
+								<ul class="nav__subbox-list">
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Доставка</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Оплата</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Гарантии качества</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Прайс-лист</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Акции</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Калькулятор</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+					<a class="nav__logo" href="#">
+						<img class="nav__logo-img" src="./img/logo.svg" alt="Логотип">
+					</a>
+
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__item-link nav__item-link--submenu" href="#">
+								О компании
+							</a>
+
+							<div class="nav__subbox">
+								<ul class="nav__subbox-list">
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Новости</a>
+									</li>
+
+									<li class="nav__subbox-item">
+										<a class="nav__subbox-link" href="#">Отзывы клиентов</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav__item">
+							<a class="nav__item-link" href="#">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="nav__buttons">
+					<a class="nav__buttons-item" href="#" aria-label="Калькулятор цен">
+						<img class="nav__buttons-item-icon" src="./img/icon/calculator.svg" alt="Калькулятор">
+					</a>
+
+					<button class="nav__buttons-item" type="button">
+						<img class="nav__buttons-item-icon" src="./img/icon/search.svg" alt="Поиск по сайту">
+					</button>
+
+					<a class="nav__buttons-item" href="#" aria-label="Корзина">
+						<img class="nav__buttons-item-icon" src="./img/icon/cart.svg" alt="Корзина">
+						<p class="nav__cart-counter">2</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 </header>

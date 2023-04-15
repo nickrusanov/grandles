@@ -2,6 +2,29 @@
 	transition: all $trans-dur ease;
 }
 
+@mixin arrow {
+	&::after {
+		@include trans;
+
+		content: "";
+		width: 10px;
+		height: 5px;
+
+		position: absolute;
+		top: 6px;
+		right: -15px;
+
+		background-image: url("./../img/icon/arrow-forward.svg");
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&--active:after {
+		transform: rotate(180deg);
+	}
+}
+
 // MEDIA
 
 @mixin sm {
@@ -30,6 +53,12 @@
 
 @mixin media($screen) {
 	@media (max-width: $screen) {
+		@content;
+	}
+}
+
+@mixin effect {
+	@media (hover: hover) and (pointer: fine) {
 		@content;
 	}
 }
