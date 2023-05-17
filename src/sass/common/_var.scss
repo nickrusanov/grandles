@@ -3,11 +3,21 @@
 :root {
 	--color-bg: #fff;
 	--color-box: #faf7f1;
+	--color-subbox: hsl(40, 0%, 96%);
 	--color-border: #e0e0e0;
+	--color-border--hover: #c4c4c4;
 	--color-text: #222;
 	--color-title: #2a1a01;
 	--color-subtext: #777;
-	--color-accent: #ff9b04;
+
+	--color-accent-rgb: 255, 155, 4;
+	--color-accent: rgb(var(--color-accent-rgb));
+	--color-accent-10: rgba(var(--color-accent-rgb), 0.1);
+	--color-accent-50: rgba(var(--color-accent-rgb), 0.5);
+	--color-accent--dark: #ee8f00;
+	--color-accent--darkest: #d88200;
+
+	--color-grey-80: hsl(0, 0%, 80%);
 }
 
 // SPACES
@@ -22,22 +32,31 @@
 	--space-xl: calc(var(--space-base) * 1.2);
 }
 
+// BORDER-RADIUS
+
+:root {
+	--border-base: 10px;
+	--border-sm: calc(var(--border-base) * 0.3);
+	--border-md: calc(var(--border-base) * 0.8);
+	--border-lg: calc(var(--border-base) * 1);
+}
+
 // FONTS
 
 $fonts-root: "../fonts/";
 
 :root {
 	--font-size-xxs: 0.75rem;
-	--font-size-xs: 0.8125rem;
-	--font-size-sm: 0.875rem;
-	--font-size-base: 1rem;
-	--font-size-md: 1.25rem;
+	--font-size-xs: 0.8125rem; //13
+	--font-size-sm: 0.875rem; //14
+	--font-size-base: 1rem; //16
+	--font-size-md: 1.25rem; //20
 	--font-size-lg: 2.125rem;
 	--font-size-xl: 2.75rem;
-	--font-size-xxl: 3.75rem;
+	--font-size-xxl: 3.75rem; //60
 }
 
-// MEDIA
+// SCREENS
 
 $screen-sm: 480px;
 $screen-md: 768px;
@@ -52,3 +71,53 @@ $layer-3: 3; // Masks
 $layer-4: 4; // Sidebars
 $layer-5: 5; // Modals
 $layer-6: 6; // Covering all
+
+/*************** MEDIA ***************/
+
+@media (max-width: 1400px) {
+	:root {
+		--font-size-xxl: 3rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	:root {
+		--font-size-lg: 2rem;
+		--font-size-xl: 2.25rem;
+		--font-size-xxl: 2.75rem;
+	}
+
+	:root {
+		--space-base: 80px;
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		--font-size-xl: 2rem;
+		--font-size-xxl: 2.5rem;
+	}
+
+	:root {
+		--space-base: 60px;
+	}
+}
+
+@media (max-width: 480px) {
+	:root {
+		--font-size-md: 1.125rem;
+		--font-size-lg: 1.5rem;
+		--font-size-xl: 1.75rem;
+		--font-size-xxl: 2rem;
+	}
+
+	:root {
+		--space-base: 50px;
+	}
+}
+
+@media (max-width: 400px) {
+	:root {
+		--font-size-xxl: 1.75rem;
+	}
+}

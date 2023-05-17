@@ -1,17 +1,27 @@
-const locBtn = document.querySelector('.location__btn');
-const locReset = document.querySelector('.location__reset');
-const locInput = document.querySelector('.location__input');
-const locBox = document.querySelector('.location__box');
+// window.addEventListener('scroll', () => {
+// 	if (window.scrollY > 58) {
+// 		document.querySelector('.nav-desktop').classList.add('nav-desktop--fixed');
+// 		document
+// 			.querySelector('.nav-desktop__logo')
+// 			.classList.add('nav-desktop__logo--small');
+// 		document.querySelector('.header').classList.add('header--space');
+// 	} else {
+// 		document
+// 			.querySelector('.nav-desktop')
+// 			.classList.remove('nav-desktop--fixed');
+// 		document
+// 			.querySelector('.nav-desktop__logo')
+// 			.classList.remove('nav-desktop__logo--small');
+// 		document.querySelector('.header').classList.remove('header--space');
+// 	}
+// });
 
-locBtn.addEventListener('click', () => {
-	if (locBtn.classList.contains('location__btn--active')) {
-		locBtn.classList.remove('location__btn--active');
-		locBox.classList.remove('location__box--visible');
+window.addEventListener('scroll', () => {
+	if (window.scrollY > 58) {
+		document.querySelector('.nav-mobile').classList.add('nav-mobile--fixed');
+		document.querySelector('.header').classList.add('header--space');
 	} else {
-		locBtn.classList.add('location__btn--active');
-		locBox.classList.add('location__box--visible');
-		
+		document.querySelector('.nav-mobile').classList.remove('nav-mobile--fixed');
+		document.querySelector('.header').classList.remove('header--space');
 	}
-	// location__reset
-
-})
+});
