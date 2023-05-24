@@ -1,0 +1,75 @@
+<li class="product">
+	<div class="product__img-wrapper">
+		<ul class="product__tags">
+			<li class="product__tag">
+				<a class="product__tag-link" href="#">
+					Акция
+				</a>
+			</li>
+
+			<li class="product__tag">
+				<a class="product__tag-link" href="#">
+					-30%
+				</a>
+			</li>
+		</ul>
+
+		<picture>
+			<source srcset="./img/content/product1.webp" type="image/webp">
+			<img class="product__img" src="./img/content/product1.png" alt="Строганая сухая доска">
+		</picture>
+
+		<p class="product__cart">В корзине: <span>5</span></p>
+	</div>
+
+	<div class="product__box">
+		<h4 class="product__title-4 title-4">
+			Строганая сухая доска
+		</h4>
+
+		<p class="product__size">
+			50х150х6000 (45х140х6000)
+		</p>
+
+		<form class="product__form" action="#">
+			<div class="product__form-inputs">
+				<div class="product__form-box">
+					<p class="product__name">Цена за:</p>
+
+					<div class="product__radio-box">
+						<input class="product__radio" type="radio" name="capacity" id="capacity-meters1" value="meters" checked>
+						<label class="product__radio-label" for="capacity-meters1">м<sup>3</sup></label>
+
+						<input class="product__radio" type="radio" name="capacity" id="capacity-things1" value="things">
+						<label class="product__radio-label" for="capacity-things1">шт</label>
+					</div>
+				</div>
+
+				<div class="product__form-box">
+					<p class="product__name">Количество:</p>
+
+					<div class="product-counter">
+						<button class="product-counter__btn" type="button">
+						</button>
+
+						<input class="product-counter__input" type="number" name="qty" value="1" min="1" max="999">
+
+						<button class="product-counter__btn product-counter__btn--plus" type="button">
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="product__bottom">
+		<div class="product__prices">
+			<p class="product__price">17 500 ₽</p>
+			<p class="product__old-price">25 000 ₽</p>
+		</div>
+
+		<a class="product__send" href="#">
+			Добавить
+		</a>
+	</div>
+</li>

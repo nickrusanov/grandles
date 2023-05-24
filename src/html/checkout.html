@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./components/head.html', {
+"title": "Grandles | Пиломатериалы",
+"description": "Недорогие пиломатериалы от производителя с доставкой по Моске и Московской области."
+})
+
+<body>
+	<div class="wrapper">
+		@@include('./components/header.html')
+
+		<main class="main">
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">Главная</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link breadcrumbs__link--disable" href="#">Оформление заказа</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="checkout">
+				<div class="container">
+					<h1 class="checkout__title-1 title-1">Оформление заказа</h1>
+
+					<div class="checkout__content">
+						<form class="checkout__form" action="#">
+							<div class="checkout__person">
+								<div class="checkout__radio radio">
+									<input class="radio__input" type="radio" name="person" id="person-physical">
+									<label class="radio__label" for="person-physical">Физическое лицо</label>
+								</div>
+
+								<div class="checkout__radio radio">
+									<input class="radio__input" type="radio" name="person" id="person-legal">
+									<label class="radio__label" for="person-legal">Юридическое лицо</label>
+								</div>
+							</div>
+
+							<div class="checkout__box">
+								<h2 class="checkout__title-3 title-3">Покупатель</h2>
+
+								<div class="checkout__box-content">
+									<div class="checkout__info info">
+										<label class="info__label" for="name">ФИО</label>
+										<input class="info__input" type="text" id="name" placeholder="Введите ваше имя">
+									</div>
+
+									<div class="checkout__info info">
+										<label class="info__label" for="email">E-mail</label>
+										<input class="info__input" type="email" id="email" placeholder="Введите ваш e-mail">
+									</div>
+
+									<div class="checkout__info info">
+										<label class="info__label" for="phone">Телефон</label>
+										<input class="info__input" type="tel" id="phone" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+									</div>
+
+									<div class="checkout__info info">
+										<label class="info__label" for="location">Местоположение</label>
+										<input class="info__input" type="text" id="location" placeholder="Введите ваше местоположение">
+									</div>
+								</div>
+							</div>
+
+							<div class="checkout__box">
+								<h2 class="checkout__title-3 title-3">Информация о доставке</h2>
+
+								<div class="checkout__delivery">
+									<div class="checkout__delivery-box">
+										<div class="checkout__radio radio">
+											<input class="radio__input" type="radio" name="delivery" id="delivery-self">
+											<label class="radio__label" for="delivery-self">Самовывоз</label>
+										</div>
+
+										<div class="checkout__radio radio">
+											<input class="radio__input" type="radio" name="delivery" id="delivery-gazelle">
+
+											<label class="radio__label radio__label--descr" for="delivery-gazelle">
+												<span><b>Газель</b> (до 1,5 т, до 3 м<span class="sup">3</span>)</span>
+												<span class="radio__label-descr">от 2 500 ₽</span>
+											</label>
+										</div>
+
+										<div class="checkout__radio radio">
+											<input class="radio__input" type="radio" name="delivery" id="delivery-hyndai">
+
+											<label class="radio__label radio__label--descr" for="delivery-hyndai">
+												<span><b>Hyndai 78</b> (до 5 т, до 9 м<span class="sup">3</span>)</span>
+												<span class="radio__label-descr">от 2 500 ₽</span>
+											</label>
+										</div>
+
+										<div class="checkout__radio radio">
+											<input class="radio__input" type="radio" name="delivery" id="delivery-maz">
+
+											<label class="radio__label radio__label--descr" for="delivery-maz">
+												<span><b>MAZ</b> (до 7 т, до 16 м<span class="sup">3</span>)</span>
+												<span class="radio__label-descr">от 2 500 ₽</span>
+											</label>
+										</div>
+
+										<div class="checkout__radio radio">
+											<input class="radio__input" type="radio" name="delivery" id="delivery-kamaz">
+
+											<label class="radio__label radio__label--descr" for="delivery-kamaz">
+												<span><b>KAMAZ</b> (до 15 т, до 23 м<span class="sup">3</span>)</span>
+												<span class="radio__label-descr">от 2 500 ₽</span>
+											</label>
+										</div>
+									</div>
+
+									<div class="checkout__info info">
+										<label class="info__label" for="address">Адрес доставки</label>
+										<input class="info__input" type="text" id="address" placeholder="Город, улица, квартира или склад">
+									</div>
+								</div>
+							</div>
+
+							<div class="checkout__box">
+								<h2 class="checkout__title-3 title-3">Информация об оплате</h2>
+
+								<div class="checkout__pay">
+									<div class="checkout__radio-btn radio-btn">
+										<input class="radio-btn__input" type="radio" name="pay" id="pay-cash">
+
+										<label class="radio-btn__label" for="pay-cash">
+											<img class="radio-btn__label-img" src="./img/checkout/cash.png" alt="Наличные">
+
+											<span class="radio-btn__label-text">Наличные</span>
+										</label>
+									</div>
+
+									<div class="checkout__radio-btn radio-btn">
+										<input class="radio-btn__input" type="radio" name="pay" id="pay-online">
+
+										<label class="radio-btn__label" for="pay-online">
+											<img class="radio-btn__label-img" src="./img/checkout/online.png" alt="Онлайн-оплата">
+
+											<span class="radio-btn__label-text">Онлайн-оплата</span>
+										</label>
+									</div>
+
+									<div class="checkout__radio-btn radio-btn">
+										<input class="radio-btn__input" type="radio" name="pay" id="pay-bill">
+
+										<label class="radio-btn__label" for="pay-bill">
+											<img class="radio-btn__label-img" src="./img/checkout/bill.png" alt="Оплата по счёту">
+
+											<span class="radio-btn__label-text">Оплата по счёту</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="checkout__box">
+								<h2 class="checkout__title-3 title-3">Состав заказа</h2>
+
+								<ul class="checkout__items">
+									<li class="cart-item cart__cart-item">
+										<div class="cart-item__box">
+											<picture class="cart-item__picture">
+												<source srcset="./img/content/items/board-1-small.webp" type="image/webp">
+												<img class="cart-item__img" src="./img/content/items/board-1-small.png" alt="Доска">
+											</picture>
+
+											<div class="cart-item__info">
+												<h4 class="cart-item__title">Доска строганная сухая</h4>
+
+												<p class="cart-item__size">50х150х6000</p>
+											</div>
+										</div>
+
+										<p class="cart-item__qty">3 шт.</p>
+
+										<p class="cart-item__total-price">17 500 ₽</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="checkout__box">
+								<h2 class="checkout__title-3 title-3">Комментарий к заказу</h2>
+
+								<textarea class="textarea" name="comment" id="comment" placeholder=""></textarea>
+
+								<div class="checkout__accept">
+									<div class="checkout__checkbox checkbox">
+										<input class="checkbox__input" type="checkbox" id="policy">
+										<label class="checkbox__label" for="policy"></label>
+									</div>
+
+									<p class="checkout__accept-text">
+										<span>Нажимая на кнопку "Подтвердить заказ", я соглашаюсь с</span>
+
+										<a class="checkout__accept-link" href="#">Политикой обработки персональных данных</a>
+									</p>
+								</div>
+
+								<button class="checkout__send" type="submit">Подтвердить заказ</button>
+							</div>
+						</form>
+
+						<div class="cart__summary summary">
+							<div class="summary__content">
+								<p class="summary__title-3 title-3">В корзине</p>
+
+								<div class="summary__box">
+									<p class="summary__text">2 товара</p>
+									<p class="summary__price">33 000 ₽</p>
+								</div>
+
+								<div class="summary__box">
+									<p class="summary__text">Сумма НДС</p>
+									<p class="summary__price">6000 ₽</p>
+								</div>
+
+								<div class="summary__box">
+									<p class="summary__text">Доставка</p>
+									<p class="summary__price">6000 ₽</p>
+								</div>
+
+								<div class="summary__box">
+									<p class="summary__text summary__text--bold">Итого:</p>
+									<p class="summary__total-price">39 000 ₽</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		@@include('./components/footer.html')
+	</div>
+
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

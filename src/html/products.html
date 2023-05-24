@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./components/head.html', {
+"title": "Grandles | Пиломатериалы",
+"description": "Недорогие пиломатериалы от производителя с доставкой по Моске и Московской области."
+})
+
+<body>
+	<div class="wrapper">
+		@@include('./components/header.html')
+
+		<main class="products-page">
+			<section class="promotion">
+				<div class="container">
+					<div class="promotion__inner">
+						<div class="promotion__content">
+							<p class="promotion__title">При покупке половой доски</p>
+							<p class="promotion__title-decor">гвозди в подарок</p>
+							<p class="promotion__text">Акция действует от 100 м2</p>
+						</div>
+
+						<div class="promotion__decor"></div>
+
+						<div class="promotion__box">
+							<picture>
+								<source srcset="./img/board.webp" type="image/webp">
+								<img class="promotion__img" src="./img/board.png" alt="Доска">
+							</picture>
+
+							<picture>
+								<source srcset="./img/nails.webp" type="image/webp">
+								<img class="promotion__img-overlay" src="./img/nails.png" alt="Гвозди">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">Главная</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">Каталог</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link breadcrumbs__link--disable" href="#">Доска</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="products">
+				<div class="container">
+					<header class="products__header">
+						<h1 class="products__title-1 title-1">Доска</h1>
+
+						<div class="search products__search">
+							<form class="search__form" action="#">
+								<input class="search__input" type="search" placeholder="Поиск по категории">
+
+								<button class="search__clear" type="button"></button>
+
+								<button class="search__btn" type="submit">
+									<svg class="search__btn-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M20.7249 19.8902L15.9136 15.0785C17.2042 13.5946 17.9856 11.6585 17.9856 9.54244C17.9856 4.88439 14.1971 1.1 9.54385 1.1C4.88615 1.1 1.10205 4.88878 1.10205 9.54244C1.10205 14.1961 4.89054 17.9849 9.54385 17.9849C11.6598 17.9849 13.5957 17.2034 15.0795 15.9127L19.8909 20.7244C20.005 20.8385 20.1586 20.9 20.3079 20.9C20.4572 20.9 20.6108 20.8429 20.7249 20.7244C20.9532 20.4961 20.9532 20.1185 20.7249 19.8902ZM2.28294 9.54244C2.28294 5.53854 5.54025 2.28536 9.53946 2.28536C13.5431 2.28536 16.796 5.54293 16.796 9.54244C16.796 13.5419 13.5431 16.8039 9.53946 16.8039C5.54025 16.8039 2.28294 13.5463 2.28294 9.54244Z"
+											stroke-width="0.2" />
+									</svg>
+								</button>
+							</form>
+						</div>
+					</header>
+
+					<div class="products__box">
+						<div class="products__filters">
+							<div class="products__sticky">
+								<div class="products__filters-top">
+									<p class="products__fitlers-title">Фильтры</p>
+
+									<button class="products__close" type="button"></button>
+								</div>
+
+								<div class="filter__box">
+									<header class="filter__header">
+										<p class="filter__header-title">Категория</p>
+
+										<svg class="filter__header-arrow" width="10" height="5" viewBox="0 0 10 5" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+												fill="#777777" />
+											<clipPath id="clip0_47_771">
+												<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+											</clipPath>
+										</svg>
+									</header>
+
+									<ul class="filter__list">
+										<li class="filter__item">
+											<a class="filter__item-link filter__item-link--active" href="#">Доска</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__item-link" href="#">Доска</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__item-link" href="#">Доска</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__item-link" href="#">Доска</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__item-link" href="#">Доска</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__item-link" href="#">Доска</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__item-link" href="#">Доска</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__item-link" href="#">Доска</a>
+										</li>
+										<li class="filter__item">
+											<a class="filter__item-link" href="#">Доска</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="filter__box">
+									<header class="filter__header">
+										<p class="filter__header-title">Стоимость</p>
+
+										<svg class="filter__header-arrow" width="10" height="5" viewBox="0 0 10 5" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+												fill="#777777" />
+											<clipPath id="clip0_47_771">
+												<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+											</clipPath>
+										</svg>
+									</header>
+
+									<form class="filter__form">
+										<div class="filter__prices">
+											<input class="filter__input" type="number" placeholder="от 9000">
+											<input class="filter__input" type="number" placeholder="до 30000">
+										</div>
+
+										<input class="filter__range" type="range">
+									</form>
+								</div>
+
+								<div class="filter__box">
+									<header class="filter__header">
+										<p class="filter__header-title">Дополнительно</p>
+
+										<svg class="filter__header-arrow" width="10" height="5" viewBox="0 0 10 5" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+												fill="#777777" />
+											<clipPath id="clip0_47_771">
+												<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+											</clipPath>
+										</svg>
+									</header>
+
+									<ul class="filter__toggles">
+										<li class="filter__toggle">
+											<input class="filter__checkbox" type="checkbox" id="checkbox-action">
+											<label class="filter__label" for="checkbox-action">Акция</label>
+										</li>
+
+										<li class="filter__toggle">
+											<input class="filter__checkbox" type="checkbox" id="checkbox-sale">
+											<label class="filter__label" for="checkbox-sale">Скидка</label>
+										</li>
+
+										<li class="filter__toggle">
+											<input class="filter__checkbox" type="checkbox" id="checkbox-best">
+											<label class="filter__label" for="checkbox-best">Хит</label>
+										</li>
+
+										<li class="filter__toggle">
+											<input class="filter__checkbox" type="checkbox" id="checkbox-new">
+											<label class="filter__label" for="checkbox-new">Новинка</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div></div>
+						</div>
+
+						<div class="products__content">
+							<ul class="products__subcategories">
+								<li class="products__subcategory">
+									<a class="products__subcategory-link" href="#">
+										<picture>
+											<source srcset="./img/category/img-1.webp" type="image/webp">
+											<img class="products__subcategory-img" src="./img/category/img-1.png" alt="Доска">
+										</picture>
+
+										<h4 class="products__subcategory-title">Доска сухая строганная</h4>
+									</a>
+								</li>
+
+								<li class="products__subcategory">
+									<a class="products__subcategory-link" href="#">
+										<picture>
+											<source srcset="./img/category/img-1.webp" type="image/webp">
+											<img class="products__subcategory-img" src="./img/category/img-1.png" alt="Доска">
+										</picture>
+
+										<h4 class="products__subcategory-title">Доска сухая строганная</h4>
+									</a>
+								</li>
+
+								<li class="products__subcategory">
+									<a class="products__subcategory-link" href="#">
+										<picture>
+											<source srcset="./img/category/img-1.webp" type="image/webp">
+											<img class="products__subcategory-img" src="./img/category/img-1.png" alt="Доска">
+										</picture>
+
+										<h4 class="products__subcategory-title">Доска сухая строганная</h4>
+									</a>
+								</li>
+							</ul>
+
+							<div class="products__flex">
+								<div class="products__sort sort">
+									<p class="sort__text">Сортировать по:</p>
+
+									<button class="sort__toggle" type="button">
+										<span class="sort__btn-text">Наименованию (А-Я)</span>
+
+										<svg class="sort__btn-arrow" width="8" height="13" viewBox="0 0 8 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4.35355 0.646447C4.15829 0.451184 3.84171 0.451184 3.64645 0.646447L0.464466 3.82843C0.269204 4.02369 0.269204 4.34027 0.464466 4.53553C0.659729 4.7308 0.976311 4.7308 1.17157 4.53553L4 1.70711L6.82843 4.53553C7.02369 4.7308 7.34027 4.7308 7.53553 4.53553C7.7308 4.34027 7.7308 4.02369 7.53553 3.82843L4.35355 0.646447ZM4.5 13L4.5 1L3.5 1L3.5 13L4.5 13Z"
+												fill="#222222" />
+										</svg>
+									</button>
+
+									<ul class="sort__box">
+										<li>
+											<button class="sort__btn" type="button">
+												<span class="sort__btn-text">Цене (по возростанию)</span>
+											</button>
+										</li>
+
+										<li>
+											<button class="sort__btn" type="button">
+												<span class="sort__btn-text">Цене (по убыванию)</span>
+											</button>
+										</li>
+
+										<li>
+											<button class="sort__btn sort__btn--active" type="button">
+												<span class="sort__btn-text">Наименованию (А-Я)</span>
+											</button>
+										</li>
+
+										<li>
+											<button class="sort__btn" type="button">
+												<span class="sort__btn-text">Наименованию (Я-А)</span>
+											</button>
+										</li>
+
+										<li>
+											<button class="sort__btn" type="button">
+												<span class="sort__btn-text">Популярности (по возростанию)</span>
+											</button>
+										</li>
+
+										<li>
+											<button class="sort__btn" type="button">
+												<span class="sort__btn-text">Популярности (по убыванию)</span>
+											</button>
+										</li>
+									</ul>
+								</div>
+
+								<button class="products__filter-btn" type="button">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M2.0504 8.47681L0.500002 8.47681C0.223802 8.47681 2.31226e-06 8.71102 2.29963e-06 9.00007C2.28699e-06 9.28911 0.223802 9.52332 0.500002 9.52332L2.0504 9.52332C2.2828 10.7159 3.2926 11.6163 4.5 11.6163C5.7074 11.6163 6.7172 10.7159 6.9496 9.52332L17.5 9.52332C17.7762 9.52332 18 9.28912 18 9.00007C18 8.71102 17.7762 8.47681 17.5 8.47681L6.9496 8.47681C6.7172 7.28421 5.7074 6.38379 4.5 6.38379C3.2926 6.38379 2.2828 7.28421 2.0504 8.47681ZM6 9.00007C6 9.86574 5.3272 10.5698 4.5 10.5698C3.6728 10.5698 3 9.86574 3 9.00007C3 8.13439 3.6728 7.4303 4.5 7.4303C5.3272 7.4303 6 8.13439 6 9.00007Z"
+											fill="#222222" />
+										<path
+											d="M11.5504 2.19776L0.5 2.19776C0.2238 2.19776 -3.69947e-07 2.43197 -3.82582e-07 2.72101C-3.95217e-07 3.01006 0.2238 3.24427 0.5 3.24427L11.5504 3.24427C11.7828 4.43688 12.7926 5.33729 14 5.33729C15.2074 5.33729 16.2172 4.43688 16.4496 3.24427L17.5 3.24427C17.7762 3.24427 18 3.01006 18 2.72102C18 2.43197 17.7762 2.19776 17.5 2.19776L16.4496 2.19776C16.2172 1.00515 15.2074 0.104736 14 0.104736C12.7926 0.104736 11.7828 1.00515 11.5504 2.19776ZM15.5 2.72102C15.5 3.58669 14.8272 4.29078 14 4.29078C13.1728 4.29078 12.5 3.58669 12.5 2.72101C12.5 1.85534 13.1728 1.15125 14 1.15125C14.8272 1.15125 15.5 1.85534 15.5 2.72102Z"
+											fill="#222222" />
+										<path
+											d="M8.0504 14.7559L0.500002 14.7559C0.223802 14.7559 2.31226e-06 14.9901 2.29963e-06 15.2791C2.28699e-06 15.5682 0.223802 15.8024 0.500002 15.8024L8.0504 15.8024C8.2828 16.995 9.2926 17.8954 10.5 17.8954C11.7074 17.8954 12.7172 16.995 12.9496 15.8024L17.5 15.8024C17.7762 15.8024 18 15.5682 18 15.2791C18 14.9901 17.7762 14.7559 17.5 14.7559L12.9496 14.7559C12.7172 13.5633 11.7074 12.6628 10.5 12.6628C9.2926 12.6628 8.2828 13.5633 8.0504 14.7559ZM12 15.2791C12 16.1448 11.3272 16.8489 10.5 16.8489C9.6728 16.8489 9 16.1448 9 15.2791C9 14.4134 9.6728 13.7094 10.5 13.7094C11.3272 13.7094 12 14.4134 12 15.2791Z"
+											fill="#222222" />
+										<clipPath id="clip0_115_1224">
+											<rect width="18" height="18" fill="white" transform="translate(18) rotate(90)" />
+										</clipPath>
+									</svg>
+
+									<span>Фильтры</span>
+								</button>
+							</div>
+
+							<ul class="products__list">
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+								@@include('./components/product.html')
+							</ul>
+
+							<div class="products__pagination pagination">
+								<ul class="pagination__list">
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											<svg class="pagination__btn-icon pagination__btn-icon--left" width="10" height="5"
+												viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+													fill="#777777" />
+												<clipPath id="clip0_47_771">
+													<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+												</clipPath>
+											</svg>
+
+											<svg class="pagination__btn-icon pagination__btn-icon--left" width="10" height="5"
+												viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+													fill="#777777" />
+												<clipPath id="clip0_47_771">
+													<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+												</clipPath>
+											</svg>
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											<svg class="pagination__btn-icon pagination__btn-icon--left" width="10" height="5"
+												viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+													fill="#777777" />
+												<clipPath id="clip0_47_771">
+													<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+												</clipPath>
+											</svg>
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn pagination__btn--active" type="button">
+											1
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											2
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											3
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											4
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											5
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											6
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											7
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											8
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											<svg class="pagination__btn-icon pagination__btn-icon--right" width="10" height="5"
+												viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+													fill="#777777" />
+												<clipPath id="clip0_47_771">
+													<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+												</clipPath>
+											</svg>
+										</button>
+									</li>
+
+									<li class="pagination__item">
+										<button class="pagination__btn" type="button">
+											<svg class="pagination__btn-icon pagination__btn-icon--right" width="10" height="5"
+												viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+													fill="#777777" />
+												<clipPath id="clip0_47_771">
+													<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+												</clipPath>
+											</svg>
+
+											<svg class="pagination__btn-icon pagination__btn-icon--right" width="10" height="5"
+												viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+													fill="#777777" />
+												<clipPath id="clip0_47_771">
+													<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+												</clipPath>
+											</svg>
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="description">
+				<div class="container">
+					<div class="article description__article description__article--closed">
+						<h2>Доска сухая строганная</h2>
+
+						<div>
+							<p>
+								Сухая доска – это потребный строительный материал, который пользуется большим рядом достоинств. Поэтому
+								много покупателей, которые хотят приобрести сухую доску в Москве и областях очень много. Приобрести
+								пиломатериал можно в компании «ГрандЛесМаркет», мы поставляем только качественный материал.
+							</p>
+						</div>
+
+						<h3>Производство и характеристика сухой доски</h3>
+
+						<div>
+							<p>
+								Что бы доску высушить, древесину отсортировывают, подбирая только качественный продукт, наивысшего
+								качества. После древесину помещают в камеру, где она стоит на сушке несколько недель. Сушка занимает
+								времени всегда по-разному, в зависимости от числа пиломатериала, его сечения и влажности.
+							</p>
+
+							<p>
+								Готовый пиломатериал содержит влагосодержание не больше 12%. В таком материале нет плесени и грибка, так
+								же исключается любое воздействие на доску. Так же итоговая влажность позволит улучшить качество
+								древесины, для того что бы воздействовать на нее без особых усилий. Если сравнивать свежеизготовленный
+								пиломатериал обычной влажности, сухая намного легче и крепче. Поэтому этот продукт стал популярным,
+								благодаря сушке.
+							</p>
+						</div>
+
+						<h3>Область применения сухой доски</h3>
+
+						<div>
+							<p>
+								Если вы хотите стойкую и устойчивую постройку, то стоит приобрести сухую доску, произведенную из хвойных
+								пород деревьев. Этот пиломатериал применяют для построек: 1. Каркасов помещений. 2. Беседок, навесов и
+								веранд. 3.Несущие конструкции, которым предоставляют высокую прочность. Из обработанной сухой доски
+								производят фасад, отделки и строганные изделия и т. д.
+							</p>
+
+							<p>
+								На складах сухая доска различных размеров и видов. Все материалы строго по ГОСТ. Качество древесины
+								имеет соответствующие сертификаты. Что бы купить пиломатериал из нашего каталога, необходимо просто
+								позвонить нашим менеджерам или написать нам на электронную почту.
+							</p>
+						</div>
+
+						<strong>
+							«ГрандЛесМаркет» на данный момент самый популярный производитель пиломатериалов — сухой доски (камерной
+							сушки). Купить продукцию вы можете на нашем сайте «ГрандЛесМаркет», задать вопросы по доставке или товару
+							вы можете по почте или по номерам
+						</strong>
+					</div>
+				</div>
+
+				<button class="description__btn" type="button">
+					<span class="description__btn-text">Развернуть</span>
+
+					<svg class="description__btn-icon" width="10" height="5" viewBox="0 0 10 5" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_47_771)">
+							<path
+								d="M0.45 0.479164C0.575 0.374997 0.723 0.322914 0.894 0.322914C1.065 0.322914 1.21283 0.374997 1.3375 0.479164L5 3.53125L8.675 0.468747C8.79167 0.371525 8.9375 0.322914 9.1125 0.322914C9.2875 0.322914 9.4375 0.374997 9.5625 0.479164C9.6875 0.583331 9.75 0.706664 9.75 0.849164C9.75 0.991664 9.6875 1.11486 9.5625 1.21875L5.35 4.71875C5.3 4.76041 5.24583 4.79 5.1875 4.8075C5.12917 4.825 5.06667 4.83361 5 4.83333C4.93333 4.83333 4.87083 4.82458 4.8125 4.80708C4.75417 4.78958 4.7 4.76014 4.65 4.71875L0.4375 1.20833C0.320833 1.11111 0.2625 0.991247 0.2625 0.848747C0.2625 0.706247 0.325 0.583053 0.45 0.479164Z"
+								fill="#777777" />
+						</g>
+						<defs>
+							<clipPath id="clip0_47_771">
+								<rect width="5" height="10" fill="white" transform="translate(10) rotate(90)" />
+							</clipPath>
+						</defs>
+					</svg>
+
+				</button>
+			</section>
+		</main>
+
+		@@include('./components/footer.html')
+	</div>
+
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

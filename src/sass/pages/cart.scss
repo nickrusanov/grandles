@@ -1,0 +1,68 @@
+.cart {
+	margin-top: var(--space-sm);
+
+	&__content {
+		display: flex;
+		gap: var(--space-md);
+
+		margin-top: var(--space-md);
+
+		position: relative;
+	}
+
+	&__items {
+		width: 100%;
+
+		position: relative;
+	}
+
+	&__clear {
+		position: absolute;
+		top: -36px;
+		right: 0;
+
+		color: var(--color-subtext);
+	}
+
+	&__clear-icon {
+		position: relative;
+		top: 3px;
+		right: 5px;
+	}
+
+	&__items-list {
+	}
+
+	&__cart-item {
+	}
+
+	&__summary {
+	}
+}
+
+/*************** ADAPTIVE ***************/
+
+@include lg {
+	.cart__content {
+		flex-direction: column;
+	}
+}
+
+@include sm {
+	.cart__clear {
+		@include border;
+		display: block;
+
+		padding: 6px 15px 10px;
+
+		position: unset;
+	}
+
+	.cart__content {
+		margin-top: var(--space-sm);
+	}
+
+	.cart__items-list {
+		margin-top: 20px;
+	}
+}

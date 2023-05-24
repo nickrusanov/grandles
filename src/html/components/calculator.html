@@ -1,0 +1,126 @@
+<section class="calculator">
+	<div class="container">
+		<div class="calculator__inner">
+			<div class="calculator__img-wrapper">
+				<picture>
+					<source srcset="./img/woman.webp" type="image/webp">
+					<img class="calculator__img" src="./img/woman.png" alt="Женщина-строитель">
+				</picture>
+			</div>
+
+			<div class="calculator__content">
+				<div class="calculator__content-top">
+					<h2 class="calculator__title-2 title-2">
+						Калькулятор пиломатериалов
+					</h2>
+
+					<form class="calculator__form" id="calculator__form" action="#">
+						<div class="calculator__box">
+							<label class="calculator__box-title" for="calculator-category">Категория</label>
+
+							<select class="calculator__select" name="calculator-category" id="calculator-category">
+								<option class="calculator__option" value="Доска">Доска</option>
+								<option class="calculator__option" value="Брус">Брус</option>
+								<option class="calculator__option" value="Брусок">Брусок</option>
+								<option class="calculator__option" value="Блокхаус">Блокхаус</option>
+								<option class="calculator__option" value="Вагонка">Вагонка</option>
+								<option class="calculator__option" value="Имитация бруса">Имитация бруса</option>
+								<option class="calculator__option" value="Половая доска">Половая доска</option>
+								<option class="calculator__option" value="Клееный пиломатериал">Клееный пиломатериал</option>
+								<option class="calculator__option" value="Фанера">Фанера</option>
+								<option class="calculator__option" value="Погонаж">Погонаж</option>
+								<option class="calculator__option" value="Лиственница">Лиственница</option>
+								<option class="calculator__option" value="Стройматериалы">Стройматериалы</option>
+							</select>
+						</div>
+
+						<div class="calculator__box">
+							<label class="calculator__box-title" for="calculator-size">Размер</label>
+
+							<select class="calculator__select" name="calculator-size" id="calculator-size">
+								<option class="calculator__option" value="self">50х150х6000</option>
+								<option class="calculator__option" value="gazel">50х150х6000</option>
+								<option class="calculator__option" value="hyndai">50х150х6000</option>
+								<option class="calculator__option" value="maz">50х150х6000</option>
+								<option class="calculator__option" value="kamaz">50х150х6000</option>
+							</select>
+						</div>
+
+						<div class="calculator__qty-box">
+							<p class="calculator__box-title">Количество</p>
+
+							<div class="calculator__qty-subbox">
+								<div class="calculator__radio-box">
+									<div class="radio">
+										<input class="radio__input" type="radio" name="calculator-capacity" id="calculator-capacity-meters"
+											value="meters">
+
+										<label class="radio__label" for="calculator-capacity-meters">
+											м<span class="sup">3</span>
+										</label>
+									</div>
+
+									<div class="radio">
+										<input class="radio__input" type="radio" name="calculator-capacity" id="calculator-capacity-things"
+											value="things">
+										<label class="radio__label" for="calculator-capacity-things">шт</label>
+									</div>
+								</div>
+
+								<div class="calculator__qty-buttons">
+									<button class="calculator__btn" type="button" id="calculator-minus">
+										<span class="calculator__btn-line"></span>
+									</button>
+
+									<input class="calculator__input" type="number" name="calculator-qty" value="10" min="1" max="9999">
+
+									<button class="calculator__btn" type="button" id="calculator-plus">
+										<span class="calculator__btn-line"></span>
+										<span class="calculator__btn-line"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="calculator__box">
+							<label class="calculator__box-title" for="calculator-delivery">Доставка</label>
+
+							<select class="calculator__select" name="calculator-delivery" id="calculator-delivery">
+								<option class="calculator__option" value="self">
+									Самовывоз
+								</option>
+
+								<option class="calculator__option" value="gazel">
+									Газель (до 1,5 т, до 3 м<sup class="sup">3</sup>)
+								</option>
+
+								<option class="calculator__option" value="hyndai">
+									Hyndai 78 (до 5 т, до 9 м<sup class="sup">3</sup>)
+								</option>
+
+								<option class="calculator__option" value="maz">
+									MAZ (до 7 т, до 16 м<sup class="sup">3</sup>)
+								</option>
+
+								<option class="calculator__option" value="kamaz">
+									KAMAZ (до 15 т, до 23 м<sup class="sup">3</sup>)
+								</option>
+							</select>
+						</div>
+					</form>
+				</div>
+
+				<div class="calculator__content-bottom">
+					<div class="calculator__price-box">
+						<p class="calculator__price-text">Стоимость:</p>
+						<p class="calculator__price">75 000 ₽</p>
+					</div>
+
+					<a class="calculator__buy" href="#">
+						Оформить заказ
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

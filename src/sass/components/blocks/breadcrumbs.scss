@@ -1,0 +1,51 @@
+.breadcrumbs {
+	margin-top: var(--space-md);
+
+	&__list {
+		display: flex;
+		gap: 20px;
+
+		max-width: 100%;
+
+		overflow: auto;
+	}
+
+	&__link {
+		position: relative;
+
+		color: var(--color-text);
+
+		&--disable {
+			color: var(--color-subtext);
+			pointer-events: none;
+		}
+
+		&:not(.breadcrumbs__link--disable)::after {
+			content: "";
+			width: 10px;
+			height: 5px;
+
+			position: absolute;
+			top: 8px;
+			right: -15px;
+			transform: rotate(-90deg);
+
+			background-image: url("./../img/icon/arrow-forward.svg");
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+/*************** MEDIA ***************/
+
+@include effect {
+	.breadcrumbs__link {
+		@include trans;
+	}
+
+	.breadcrumbs__link:hover {
+		color: var(--color-accent);
+	}
+}

@@ -1,0 +1,68 @@
+.summary {
+	width: 100%;
+	max-width: 315px;
+
+	&__content {
+		width: 100%;
+
+		position: sticky;
+		top: 85px;
+		padding: var(--space-sm);
+
+		background-color: var(--color-box);
+		border-radius: var(--border-lg);
+	}
+
+	&__title-3 {
+		font-weight: 500;
+	}
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+
+		&:first-of-type {
+			margin-top: var(--space-xs);
+		}
+
+		&:not(:first-of-type):not(:last-of-type) {
+			margin-top: 15px;
+		}
+
+		&:last-of-type {
+			margin-top: var(--space-sm);
+		}
+	}
+
+	&__text {
+		&--bold {
+			font-weight: 600;
+		}
+	}
+
+	&__price {
+		font-weight: 600;
+		white-space: nowrap;
+	}
+
+	&__total-price {
+		font-size: var(--font-size-md);
+		font-weight: 600;
+		white-space: nowrap;
+	}
+
+	&__btn {
+		@include btn(100%, 60px);
+
+		margin-top: var(--space-sm);
+	}
+}
+
+/*************** ADAPTIVE ***************/
+
+@include lg {
+	.summary {
+		margin: 0 auto;
+		max-width: 480px;
+	}
+}

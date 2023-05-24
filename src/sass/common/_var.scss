@@ -1,23 +1,24 @@
 // COLORS
 
 :root {
-	--color-bg: #fff;
-	--color-box: #faf7f1;
+	--color-accent-rgb: 249, 133, 7;
+	--color-accent: rgb(var(--color-accent-rgb));
+	--color-accent-a-10: rgba(var(--color-accent-rgb), 0.1);
+	--color-accent-a-50: rgba(var(--color-accent-rgb), 0.5);
+	--color-accent--dark: rgb(229, 117, 0);
+	--color-accent--darkest: rgb(204, 105, 0);
+
+	--color-grey-l-100: hsl(0, 0%, 100%);
+	--color-grey-l-80: hsl(0, 0%, 80%);
+
+	--color-bg: var(--color-grey-l-100);
+	--color-box: rgb(249, 248, 245);
 	--color-subbox: hsl(40, 0%, 96%);
 	--color-border: #e0e0e0;
 	--color-border--hover: #c4c4c4;
 	--color-text: #222;
 	--color-title: #2a1a01;
 	--color-subtext: #777;
-
-	--color-accent-rgb: 255, 155, 4;
-	--color-accent: rgb(var(--color-accent-rgb));
-	--color-accent-10: rgba(var(--color-accent-rgb), 0.1);
-	--color-accent-50: rgba(var(--color-accent-rgb), 0.5);
-	--color-accent--dark: #ee8f00;
-	--color-accent--darkest: #d88200;
-
-	--color-grey-80: hsl(0, 0%, 80%);
 }
 
 // SPACES
@@ -51,6 +52,7 @@ $fonts-root: "../fonts/";
 	--font-size-sm: 0.875rem; //14
 	--font-size-base: 1rem; //16
 	--font-size-md: 1.25rem; //20
+	--font-size-md-2: 1.5rem; //24
 	--font-size-lg: 2.125rem;
 	--font-size-xl: 2.75rem;
 	--font-size-xxl: 3.75rem; //60
@@ -92,6 +94,12 @@ $layer-6: 6; // Covering all
 	}
 }
 
+@media (max-width: 992px) {
+	:root {
+		--font-size-md: 1.125rem;
+	}
+}
+
 @media (max-width: 768px) {
 	:root {
 		--font-size-xl: 2rem;
@@ -106,6 +114,7 @@ $layer-6: 6; // Covering all
 @media (max-width: 480px) {
 	:root {
 		--font-size-md: 1.125rem;
+		--font-size-md-2: 1.25rem;
 		--font-size-lg: 1.5rem;
 		--font-size-xl: 1.75rem;
 		--font-size-xxl: 2rem;
